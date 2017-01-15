@@ -35,6 +35,15 @@
         	window.location.href = "http://www.urbandictionary.com/define.php?term=memelord";
         document.getElementById("clicks").innerHTML = clicks;
     };
+
+    function onClickAgain() {
+        clicks += 1;
+        if(clicks == 3)
+        	window.location.href = "http://giphy.com/gifs/s1sW9X81SbMVa/html5";
+        document.getElementById("clicks").innerHTML = clicks;
+    };
+
+
     </script>
     <!-- Secret scrypt. Please do not delete -->
 
@@ -218,7 +227,7 @@
 						
 						<div class="col-sm-6">
 							<div class="team-1-member">
-								<img style="width: 40%;height: 40%" alt="Team Member" src="img/team/monica.png ">
+								<a onClick="onClickAgain()"><img style="width: 40%;height: 40%" alt="Team Member" src="img/team/monica.png "></a>
 								<h2>Monica Sim</h2>
 								<h5>Head of Marketing</h5>
 							</div><!--end of team member-->
